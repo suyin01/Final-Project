@@ -1,3 +1,4 @@
+@import url('https://cdn.jsdelivr.net/font-zero-width/latest/zero-width.css');
 /******************************************
 /* SETUP
 /*******************************************/
@@ -49,10 +50,14 @@
 
 body {
 	color: #1E8BC3;
-	font-size: 18px;
+	font-size: 1.2em;
 	line-height: 1.4;
 	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 	font-weight: 300;
+	background: url(../images/background-water_large.jpg) no-repeat;
+	background-size: cover;
+	background-position: top;
+	height: 900px;
 }
 
 a {
@@ -69,29 +74,58 @@ a {
 	color: #1E8BC3;
 	overflow: hidden;
 	padding: 0 3%;
-	max-width: 100%;
+/*	max-width: 100%;*/
+	width: 100%;
 }
 
 #page-header nav ul {
 	display: none;
 	float: right;
+	font-weight: 400;
+	color: #1E8BC3;
+	text-decoration: none;
 }
 
-.wrapper {
-	display: table;
-	max-width: 100%;
-	margin: 0 auto;
-	vertical-align: middle;
+.logo {
+	padding: 20px 0 0 0;
 }
 
 .hamburger {
 	display: inline-block;
 	color: #1E8BC3;
-	padding: 10%;
+	padding: 10px;
 	background: #FFFFFF;
 	border: none;
+	margin: 10px;
+	float: right;
+}
+
+.style-icons {
+	display: inline;
 	margin: 0 auto;
 }
+
+blockquote:before {
+	content: open-quote;
+	color: #1E8BC3;
+	font-family: 'Lobster', cursive;
+	font-size: 5em;
+	line-height: 0.1em;
+  	margin-right: 0.1em;
+  	vertical-align: -0.4em;
+}
+
+/*
+blockquote:after {
+	content: close-quote;
+	color: #1E8BC3;
+	font-family: 'Lobster', cursive;
+	font-size: 5em;
+	line-height: 0.1em;
+  	margin-right: -1.5em;
+  	vertical-align: -0.1em;
+}
+*/
 
 blockquote span {
 	font-weight: 800;
@@ -103,42 +137,60 @@ blockquote span {
 .testimonial {
 	background: #ecf0f1;
 	overflow: hidden;
-	opacity: 0.65;
+	opacity: 0.6;
 	color: #34495E;
 	text-align: center;
-}
-
-#background {
-	height: 800px;
-	padding-top: 32px;
-	background: url(../images/background-water.jpg) no-repeat top center;
+	margin-top: 40px;
 }
 
 h1 {
-	font-weight: 600;
+	text-align: center;
 	margin: 0 auto;
-	padding-top: 10px;
-	text-align: left;
+	color: #1E8BC3;
+	font-weight: 400;
+	font-size: 1.3em;
+	line-height: 1.3em;
+	padding: 30px 30px 0 30px;
 }
 
 h2 {
+	text-transform: uppercase;
+	color: #FFFFFF;
 	font-weight: 600;
-	text-align: center;
-	color: #ecf0f1;
+	font-size: 1.2em;
+	padding: 20px 20px 0 20px;
 	margin: 0 auto;
+	text-align: center;
 }
 
 h3 {
-	text-transform: uppercase;
-	color: #FFFFFF;
-	font-weight: 800;
-	padding: 20px;
 	margin: 0 auto;
+	font-weight: 300;
+	font-size: .9em;
+	padding: 10px 20px 20px 20px;
+	color: #FFFFFF;
 	text-align: center;
 }
 
-.info {
-	padding: 20px;
+.info-boxes {
+	text-align: center;
+	color: #FFFFFF;
+	margin: 0 auto;
+}
+
+.offer,
+.tips {
+	background: #1E8BC3;
+	padding-bottom: 25px;
+}
+
+.classes {
+	background: #52B3D9;
+	padding-bottom: 25px;
+}
+
+span {
+	font-weight: 600;
 }
 
 ul li {
@@ -150,10 +202,127 @@ ul li {
 	text-decoration: none;
 	text-transform: uppercase;
 	font-weight: 600;
-	background: #F4D03F;
-	color: black;
+	background: #030303;
+	color: #FFFFFF;
 	display: block;
 	text-align: center;
-	padding: 10px;
-	border-radius: 5px;
+	padding: 15px;
+	margin: 0 20px 0 20px;
+	font-size: .9em;
+}
+
+.styles {
+	color: #FFFFFF;
+	font-weight: 600;
+	text-align: center;
+	margin: 0 auto;
+	font-size: .9em;
+}
+
+#page-footer {
+	background: #000000;
+	height: 230px;
+	margin: 0 auto;
+}
+
+.social-icon-group {
+	margin: 0 auto;
+	display: block;
+}
+
+.social-icons {
+	margin-right: 25%;
+	margin-left: 25%;
+	margin-bottom: 0;
+	display: inline-block;
+	padding: 0;
+}
+
+.facebook,
+.twitter,
+.youtube {
+	margin: 20px 10px 10px 10px;
+}
+
+.contact-details {
+	text-align: center;
+	display: block;
+	margin: 0 auto;
+}
+
+p {
+	color: #FFFFFF;
+	font-size: .8em;
+	line-height: .9em;
+	text-align: center;
+}
+
+@media only screen and (min-width: 800px) {
+	
+body {
+		width: 100%;
+		margin: auto;
+	}
+	
+#page-header nav ul {
+	font-weight: 400;
+	color: #1E8BC3;
+	text-decoration: none;
+}
+	
+.hamburger {
+	display: none;
+	
+}
+	
+.style-icons {
+	display: inline;
+}
+
+	
+.offer, .classes, .tips {
+		width: 28%;
+		padding: 1%;
+		margin: 2% 1% 2% 1%;
+		display: inline-block;
+		vertical-align: top;
+		font-family: 'Open Sans';
+		font-size: 1.2rem;
+	}
+	
+/*
+.tips:last-child {
+		width: 28%;
+		padding: 2%;
+		display: inline-block;
+		vertical-align: top;
+		font-family: 'Open Sans';
+		font-size: 1.2rem;
+	}
+*/
+		
+.info-boxes {
+		font-family 'zero-width';
+		font-size: 0;
+	}	
+.button {
+	display: inline-block;
+	text-align: center;
+	padding: 20px;
+	margin-bottom: 10px;
+	font-size: .9em;
+}	
+	
+h2 {
+	padding-top: 10px;
+}
+
+/*
+#page-footer {
+	height: 230px;
+	margin: 0 auto;
+}
+*/
+
+	
 }

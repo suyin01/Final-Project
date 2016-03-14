@@ -3,9 +3,10 @@
 
 <head>
 	<meta charset="utf-8">
-	<title> Yoga Studio Name</title>
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,300,600,800' rel='stylesheet' type='text/css'>
-	<meta name="description" content="blah blah blah blah">
+	<title>Balance Studios | Home</title>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,300,400,600' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+	<meta name="description" content="Site for Balance Studios - Yoga and meditation">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- external CSS link -->
 	<link rel="stylesheet" href="css/normalize.css">
@@ -14,69 +15,93 @@
 
 <body>
 	<header id="page-header">
+		<img class="logo" src="images/balance-logo.jpg" alt="Balance Studios logo">
 		<div class="wrapper">
-			<h1> Logo here</h1>
 			<nav>
 				<div class="hamburger">&#9776;</div>
 				<ul>
-					<li>Home</li>
-					<li>About us</li>
-					<li>Yoga tips</li>
-					<li>Timetable + Classes</li>
-					<li>Contact us</li>
+					<li><a href="index.html">Home</li></a>
+						<li>About us</li>
+						<li>Yoga tips</li>
+						<li>Timetable + Classes</li>
+						<li>Contact us</li>
 				</ul>
 			</nav>
 		</div>
 	</header>
-	<main id="background">
-		<section>
-			<h2>Heading here...</h2>
-			<ul>
+	<main>
+		<div>
+			<h1>Find your balance.</h1>
+			<div class="style-icons">
+				<ul>
+					<li>
+						<img class="power-image" src="images/power.png">
+						<p class="styles">Power</p>
+					</li>
+					<li>
+						<img class="yin-image" src="images/yin.png">
+						<p class="styles">Yin</p>
+					</li>
+					<li>
+						<img class="basics-image" src="images/basics.png">
+						<p class="styles">Basics</p>
+					</li>
+					<li>
+						<img class="hot-image" src="images/hot.png">
+						<p class="styles">Hot</p>
+					</li>
+				</ul>
+			</div>
+			<div class="testimonial">
+				<blockquote>Yoga has become so much more than a great way to keep fit. It encourages me to stick to other healthy practices, and makes me far more productive both in my own time and at work.
+					<span>- Amy Poelher</span></blockquote>
+			</div>
+		</div>
+
+		<div class="info-boxes">
+			<section class="offer">
+				<h2>New to yoga?</h2>
+				<h3>10 days unlimited yoga for just <span>$25</span>.</h3>
+				<a class="button" href="#">Sign Up Now</a>
+			</section>
+			<section class="classes">
+				<h2>Timetable and classes</h2>
+				<h3>View our timetable and classes here.</h3>
+				<a class="button" href="#">Book class</a>
+			</section>
+			<section class="tips">
+				<h2>Yoga tips</h2>
+				<h3>We offer 8 tips to get you started.</h3>
+				<a class="button" href="#">Learn more</a>
+			</section>
+		</div>
+	</main>
+	<footer id="page-footer">
+		<div class="social-icon-group">
+			<ul class="social-icons">
 				<li>
-					<img src="images/power.png">
+					<a href="https://www.facebook.com/"><img class="facebook" src="images/facebook-logo.png" alt="Facebook logo">
+					</a>
 				</li>
 				<li>
-					<img src="images/yin.png">
+					<a href="https://twitter.com/"><img class="twitter" src="images/twitter-logo.png" alt="Twitter logo">
+					</a>
 				</li>
 				<li>
-					<img src="images/basics.png">
-				</li>
-				<li>
-					<img src="images/hot.png">
+					<a href="https://www.youtube.com/"><img class="youtube" src="images/youtube-logo.png" alt="Youtube logo">
+					</a>
 				</li>
 			</ul>
+		</div>
+		<div class="contact-details">
+			<h2>0413 019 746</h2>
+			<p>info@balancestudios.com.au</p>
+			<p>300 Lonsdale St, Melbourne, VIC 3000</p>
+		</div>
 
-			<div class="testimonial">
-				<blockquote>&ldquo;Yoga has become so much more than a great way to keep fit. It encourages me to stick to other healthy practices, and makes me far more productive both in my own time and at work.&rdquo;
-					<span>- Happy customer</span></blockquote>
-			</div>
-		</section>
-		
-		<section class="info">
-			<h3>Intro offer</h3>
-			<p>10 days unlimited yoga for just $25.</p>
-			<a class="button" href="#">Sign Up Now</a>
-		
-		</section>
-
-<!--
-		<section class="intro-offer">
-			<h2>Intro offer</h2>
-		</section>
--->
-
-
-
-
-
-	</main>
+	</footer>
 	<!--		Include jQuery-->
 	<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-	<script>
-		window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')
-	</script>
-	<!--		Include custom JavaScript-->
-	<script src="js/plugins.js"></script>
 	<script src="js/main.js"></script>
 </body>
 
