@@ -55,7 +55,7 @@ body {
 	line-height: 1.4;
 	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 	font-weight: 300;
-	background: url(../images/background-water_large.jpg) no-repeat;
+	background: url(../images/background-water_large2.jpg) no-repeat;
 	background-size: cover;
 	background-position: top;
 	height: 900px;
@@ -115,11 +115,16 @@ a {
 	padding: 0;
 }
 
+.power-image, .hot-image, .basics-image, .yin-image {
+	margin: 10px;
+}
+
 blockquote {
-	quotes: "“" "”" "‘" "’";
+/*	quotes: "“" "”" "‘" "’";*/
 	max-width: 75%;
 	text-align: center;
 	display: inline-block;
+	font-weight: 400;
 }
 
 
@@ -230,6 +235,7 @@ ul li {
 	padding: 15px;
 	margin: 0 20px 0 20px;
 	font-size: .9em;
+	border-radius: 2px;
 }
 
 .styles {
@@ -238,6 +244,7 @@ ul li {
 	text-align: center;
 	margin: 0 auto;
 	font-size: 1em;
+	padding-top: 2px;
 }
 
 #page-footer {
@@ -249,6 +256,7 @@ ul li {
 .social-icon-group {
 	margin: 0 auto;
 	display: block;
+	
 }
 
 .social-icons {
