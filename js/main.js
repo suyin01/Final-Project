@@ -23,41 +23,23 @@ $(document).ready(function() {
 	
 // when user hovers over 'hot' image, hot-2 image appears//	
 	$('.hot-image').hover(function(){
-		$(this).attr('src', 'images/hot-2.png');
+//		$(this).fadeTo(300, function() {
+			$(this).attr('src', 'images/hot-2.png');
+//			$(this).fadeIn(300);
+//		});
 	}, function() {
-		$(this).attr('src', 'images/hot.png');
+//		$(this).fadeOut(300, function() {
+			$(this).attr('src', 'images/hot.png');
+//			$(this).fadeIn(300);
+		});
+	
+	
+//when user clicks on hamburger button, nav menu drops down//
+	
+	$('.hamburger').click(function(){
+		$(this).next().slideToggle();
 	});
 	
 	
 	
-	
-	
-	
-	
-	
-	
-	
 });
-//
-//var myName = 'Suyin';
-//	
-//var nameOfFunction = function(somethingIWantToUseInTheFunction) {
-//	alert(somethingIWantToUseInTheFunction);
-//};
-//
-//nameOfFunction(myName);
-//	
-//	
-//	var table = function(var legs = soething that you told me) {
-//	var legs = soething that you told me
-//	console.log(legs);
-//}
-//
-//
-//
-//table(4)
-//
-//function(var legs = 4) {
-//	var legs = 4
-//	alert(legs) // alert 4
-//}

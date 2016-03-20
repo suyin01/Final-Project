@@ -46,7 +46,7 @@
 
 
 /******************************************
-/* BASE STYLES
+/* BASE STYLES - MOBILE FIRST
 /*******************************************/
 
 body {
@@ -58,7 +58,7 @@ body {
 	background: url(../images/background-water_large2.jpg) no-repeat;
 	background-size: cover;
 	background-position: top;
-	height: 900px;
+	height: 100%;
 }
 
 a {
@@ -75,29 +75,26 @@ a {
 	color: #1E8BC3;
 	overflow: hidden;
 	padding: 0 3%;
-	/*	max-width: 100%;*/
 	width: 100%;
 	position: relative;
 	display: inline-block;
 }
 
-.nav-wrapper {
-	position: absolute;
-	display: inline-block;
-	right: 20px;
-	top: 40px;
-}
-
-#page-header nav ul {
-	display: none;
-	float: right;
+.nav-links {
+	margin: 10px;
+	font-size: .8em;
+	text-transform: uppercase;
 	font-weight: 400;
 	color: #1E8BC3;
-	text-decoration: none;
+}
+
+.nav-links:hover {
+	color: #52B3D9;
+	font-weight: 600;
 }
 
 .logo {
-	padding: 20px 0 15px 0;
+	padding: 15px 0 10px 5px;
 }
 
 .hamburger {
@@ -107,7 +104,24 @@ a {
 	background: #FFFFFF;
 	border: none;
 	margin: 0;
-	position: relative;
+	position: absolute;
+	right: 25px;
+	top: 38px;
+}
+
+#page-header nav ul {
+	display: block;
+	padding-left: 5px;
+}
+
+#page-header nav ul li {
+	display: block;
+	background: white;
+	color: #1E8BC3;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	border-bottom: .5px solid #52B3D9;
+	margin: 0 auto;
 }
 
 .style-icons ul {
@@ -115,43 +129,19 @@ a {
 	padding: 0;
 }
 
-.power-image, .hot-image, .basics-image, .yin-image {
+.power-image,
+.hot-image,
+.basics-image,
+.yin-image {
 	margin: 10px;
 }
 
 blockquote {
-/*	quotes: "“" "”" "‘" "’";*/
 	max-width: 75%;
 	text-align: center;
 	display: inline-block;
 	font-weight: 400;
 }
-
-
-/*
-blockquote:before {
-	content: open-quote;
-	color: #1E8BC3;
-	font-family: 'Lobster', cursive;
-	font-size: 3em;
-	line-height: 1;
-  	margin-right: 0.1em;
-  	vertical-align: -0.5em;
-}
-*/
-
-
-/*
-blockquote:after {
-	content: close-quote;
-	color: #1E8BC3;
-	font-family: 'Lobster', cursive;
-	font-size: 5em;
-	line-height: 1;
-  	margin-right: -1.5em;
-  	vertical-align: -0.5em;
-}
-*/
 
 blockquote span cite {
 	font-weight: 800;
@@ -174,7 +164,7 @@ h1 {
 	margin: 0 auto;
 	color: #1E8BC3;
 	font-weight: 400;
-	font-size: 1.3em;
+	font-size: 1.4em;
 	line-height: 1.3em;
 	padding: 30px 30px 0 30px;
 }
@@ -184,6 +174,7 @@ h2 {
 	color: #FFFFFF;
 	font-weight: 600;
 	font-size: 1.2em;
+	line-height: 1.2em;
 	padding: 20px 20px 0 20px;
 	margin: 0 auto;
 	text-align: center;
@@ -228,14 +219,18 @@ ul li {
 	text-decoration: none;
 	text-transform: uppercase;
 	font-weight: 600;
-	background: #030303;
+	background: #1a1a1a;
 	color: #FFFFFF;
 	display: block;
 	text-align: center;
 	padding: 15px;
 	margin: 0 20px 0 20px;
 	font-size: .9em;
-	border-radius: 2px;
+	border-radius: 2.5px;
+}
+
+.button:hover {
+	color: #52B3D9;
 }
 
 .styles {
@@ -247,16 +242,21 @@ ul li {
 	padding-top: 2px;
 }
 
+.styles:hover {
+	font-weight: 300;
+	color: #FFFFFF;
+}
+
 #page-footer {
 	background: #000000;
 	height: 200px;
 	margin: 0 auto;
+	position: relative;
 }
 
 .social-icon-group {
 	margin: 0 auto;
 	display: block;
-	
 }
 
 .social-icons {
@@ -281,10 +281,102 @@ ul li {
 
 p {
 	color: #FFFFFF;
-	font-size: .8em;
-	line-height: .9em;
+	font-size: .9em;
+	line-height: 1.3em;
 	text-align: center;
+	font-weight: 300;
+	margin: 0 20px 0 20px;
 }
+
+
+/******************************************
+/* CONTACT US - FORMS
+/*******************************************/
+
+label {
+	color: white;
+	font-weight: 300;
+	font-size: .8em;
+}
+
+input[type="text"],
+input[type="email"] {
+	display: block;
+	border: none;
+	background: #f1f1f1;
+	font-weight: 400;
+	color: black;
+	font-size: .8em;
+	padding: 12px 15px 12px 5px;
+	margin-bottom: 18px;
+	margin-top: 5px;
+	width: 100%;
+	border-radius: 2px;
+}
+
+textarea {
+	width: 100%;
+	height: 100px;
+	padding: 12px 15px 12px 5px;
+	border-radius: 2px;
+	border: 0;
+	background-color: #FFFFFF;
+	resize: none;
+	margin-bottom: 15px;
+	margin-top: 5px;
+	font-size: .8em;
+	color: black;
+	font-weight: 400;
+}
+
+input[type="submit"] {
+	background: #1E8BC3;
+	color: #FFFFFF;
+	font-size: .8em;
+	font-weight: 600;
+	padding: 10px;
+	border-radius: 2px;
+	border: 0;
+}
+
+input[type="submit"]:hover {
+	background: #52B3D9;
+}
+
+fieldset {
+	border: 0;
+	display: block;
+}
+
+
+/******************************************
+/* ABOUT US STYLES
+/*******************************************/
+
+/*
+.teacher-pics {
+	margin: 0 auto;
+	display: block;
+	padding-top: 20px;
+}
+*/
+
+.teacher-1,
+.teacher-2,
+.teacher-3 {
+	text-align: center;
+	padding: 5px 15px 5px 15px;
+	display: block;
+}
+
+.teacher-3:last-child {
+	padding-bottom: 20px;
+}
+
+
+/******************************************
+/* MEDIA QUERY FOR DESKTOP
+/*******************************************/
 
 @media only screen and (min-width: 800px) {
 	body {
@@ -292,24 +384,24 @@ p {
 		margin: auto;
 	}
 	#page-header nav ul {
-		font-weight: 400;
-		color: #1E8BC3;
-		text-decoration: none;
-		display: block;
+		display: inline;
+		padding-left: 5px;
 	}
-	.nav-links {
+	#page-header nav ul li {
+		display: inline;
 		color: #1E8BC3;
-		text-decoration: none;
+		padding: 40px 0 40px 0;
+		border-bottom: 0;
+		margin: 0 auto;
+		float: right;
 	}
-	.nav-links:visited {
-		color: #1E8BC3;
-		text-decoration: none;
+	.clearfix-clear {
+		clear: both;
+		display: inline;
 	}
-	.nav-wrapper {
-		position: absolute;
+	.logo {
+		padding: 15px 0 10px 5px;
 		display: inline-block;
-		right: 40px;
-		top: 20px;
 	}
 	.hamburger {
 		display: none;
@@ -342,4 +434,27 @@ p {
 	h2 {
 		padding-top: 10px;
 	}
+	p {
+		max-width: 40%;
+		text-align: center;
+		margin: 0 auto;
+	}
+	fieldset {
+		border: 0;
+		display: block;
+		max-width: 40%;
+		margin: 0 auto;
+	}
+	.teacher-1,
+	.teacher-2,
+	.teacher-3 {
+/*
+		text-align: center;
+		padding: 5px 15px 5px 15px;
+		width: 100%;
+		margin: auto;
+		display: inline-block;
+		vertical-align: top;
+	}
+*/
 }
