@@ -5,14 +5,6 @@ $(document).ready(function () {
 		$(this).attr('src', 'images/power-2.png');
 	}, function () {
 		$(this).attr('src', 'images/power.png');
-		
-		
-//		// on 'classes' page, the images are static and don't animate//	
-//	if (this).attr('src', '../images/power-2.png');
-//}, function () {
-//	$(this).attr();
-	
-		
 	});
 
 	// when user hovers over 'yin' image, yin-2 image appears//
@@ -36,16 +28,13 @@ $(document).ready(function () {
 		$(this).attr('src', 'images/hot.png');
 	});
 
-
 	
-
 
 	//when user clicks on hamburger button, nav menu drops down//
 
 	$('.hamburger').click(function () {
 		$(this).next().slideToggle();
 	});
-
 
 
 });
